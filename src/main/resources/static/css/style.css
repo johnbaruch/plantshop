@@ -1,0 +1,37 @@
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /*background-color: #f7bed0;*/
+}
+
+.navbar {
+  margin-bottom: 20px;
+}
+
+.navbar-brand{
+  color: #f110d9 !important;
+}
+
+.container{width: 90%;}
+.carousel-inner .item img{
+  height: 300px;
+}
+
+
+
+.navbar-default .navbar-nav li > a {
+  color: #1e2414 !important;
+}
+
+.carousel-caption{
+    color: #1e2414;
+}
+
+.full {
+    background: url('/images/bg.png') repeat-x center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height:100%;
+}

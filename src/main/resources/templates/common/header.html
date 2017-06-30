@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:fragment="common-header">
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>Navbar Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="webjars/bootstrap/3.3.6/css/bootstrap.css" rel="stylesheet"/>
+    <!-- Custom styles for this template -->
+    <link href="/css/style.css" rel="stylesheet"/>
+
+
+</head>
+
+<body>
+<div th:fragment="navbar">
+    <div class="page-top" style="width: 100%;height: 1px;background-color: #f110d9"></div>
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">PlantShop.com</a>
+            </div>
+            <div id="navbar">
+                <ul class="nav navbar-nav navbar-left ">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Browse Categories<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Roses</a></li>
+                            <li><a href="#">Hoyas</a></li>
+                            <li><a href="#">Orchids</a></li>
+                            <li><a href="#">Ferns</a></li>
+                            <li><a href="#">House Plants</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Pre-order</li>
+                            <li><a href="#">Roses</a></li>
+                            <li><a href="#">Rare types</a></li>
+                        </ul>
+                    <li>
+                        <form class="navbar-form">
+                            <div class="form">
+                                <input type="text" name="keyword" class="form-control" placeholder="Plant name"/>
+                                <button type="submit" class="btn btn-default">Search</button>
+                            </div>
+                        </form>
+                    </li>
+                    </li>
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="/basket">BASKET</a></li>
+                    <li><a th:href="@{/login}">MY ACCOUNT</a></li>
+                    <li><a href="/logout">LOGOUT</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+</div>
+
+<div th:fragment="body-bottom-scripts">
+    <script src="webjars/jquery/1.9.1/jquery.min.js"></script>
+    <script src="webjars/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</div>
+
+
+</body>
+</html>
